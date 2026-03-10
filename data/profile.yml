@@ -1,0 +1,211 @@
+personal:
+  name: Leonardo Bornhaeusser
+  location: Berlin Metropolitan Area
+  email: leonardo@creativate.tech
+  linkedin: https://www.linkedin.com/in/leonardo-bornh%C3%A4u%C3%9Fer/
+  github: https://github.com/adminleo
+  headline: Founder & Deep Tech Innovator
+  tagline: Building Europe's layer of decision intelligence - explainable, independent, and impactful.
+
+about: |
+  SME leaders don't need more AI tools - they need faster, clearer decisions they can defend.
+  At Creativate AI Studio, we turn your data and market signals into explainable forecasts
+  and scenarios that guide concrete actions - EU-ready and business-first.
+
+  With a background spanning economics, business informatics, and over a decade of entrepreneurship,
+  I bridge the gap between technical innovation and business impact. I founded my first venture
+  while still in high school 11 years ago. Since then I've built products, led teams, and learned
+  that the best technology serves people, society, and the planet.
+
+skills:
+  technical:
+    - Python / FastAPI
+    - TypeScript / Next.js
+    - AI/ML Systems
+    - Explainable AI
+    - Data Engineering
+    - PostgreSQL / Redis
+    - Docker / DevOps
+    - EU AI Act Compliance
+  business:
+    - Business Development
+    - Product Strategy
+    - Startup Leadership
+    - Corporate Governance
+    - Investor Relations
+    - UX Research
+    - Tokenization / Web3
+    - Public Speaking
+
+experience:
+  - title: Founder / CTO
+    company: Creativate AIStudio
+    url: https://creativate.tech
+    period: Apr 2024 - Present
+    location: Berlin, Germany
+    type: Full-time
+    description: |
+      Building Europe's layer of decision intelligence. Leading development of cNode,
+      a modular AI system for explainable forecasting and scenario planning.
+      EU AI Act compliance architecture. B2B deep-tech venture with co-founders
+      Lisa Bennewitz (CFO) and Stella Manga Chesnay (Legal/GDPR).
+    highlights:
+      - Built explainable AI forecasting platform (cNode)
+      - EU AI Act compliance-by-design architecture
+      - Accepted into Futury Female Founders accelerator program
+      - Secured strategic angel investors via Tokenize.it
+
+  - title: CEO & Founder
+    company: Born2Hold Ventures GmbH
+    period: Dec 2022 - Present
+    location: Berlin, Germany
+    type: Self-employed
+    description: |
+      Venture holding and strategic advisory for early-stage startups.
+      Focus on restructuring, corporate governance, and founder support.
+    highlights:
+      - Startup venture portfolio management
+      - Corporate governance consulting
+      - Strategic restructuring advisory
+
+  - title: COO & Co-Founder
+    company: Camsol.io
+    period: Nov 2022 - Apr 2025
+    location: Berlin, Germany
+    type: Full-time
+    description: |
+      B2B web development and digital solutions. Managed operations,
+      product development, and client relationships.
+    highlights:
+      - Scaled B2B web development operations
+      - Led product development and UX strategy
+      - Managed cross-functional development team
+
+  - title: Trainee Business Development
+    company: Sparkasse Vorpommern
+    period: Apr 2021 - Oct 2022
+    location: Mecklenburg-West Pomerania, Germany
+    type: Full-time
+    description: |
+      Business development trainee focused on digital innovation
+      and new business models in the banking sector.
+    highlights:
+      - Contributed to Karla Plattform GmbH launch
+      - UX research and B2B strategy
+      - Digital transformation initiatives
+
+  - title: Product Designer
+    company: Karla Plattform GmbH
+    period: Apr 2021 - Oct 2022
+    location: Greifswald, Germany
+    type: Full-time
+    description: |
+      Product design and corporate identity for a digital platform venture
+      within the Sparkasse ecosystem.
+    highlights:
+      - Corporate identity design
+      - Software development contribution
+      - Product-market fit research
+
+education:
+  - degree: Bachelor of Science - Economics
+    institution: "Universit\xE4t Greifswald"
+    period: 2018 - 2021
+    highlights:
+      - SWOT Analysis specialization
+
+  - degree: Bachelor of Science - Wirtschaftsinformatik (Business Informatics)
+    institution: WINGS Professional Studies - Wismar University
+    period: Oct 2021 - Sep 2022
+    highlights:
+      - Agile Methods
+      - Product Development
+
+projects:
+  - name: cNode
+    description: AI-augmented decision workspace with explainable forecasting and scenario planning
+    tech:
+      - Python
+      - FastAPI
+      - Next.js
+      - PostgreSQL
+      - TimescaleDB
+    url: https://creativate.tech
+
+  - name: Creativate AI Studio
+    description: Deep-tech venture studio building Europe's decision intelligence layer
+    tech:
+      - Python
+      - TypeScript
+      - Docker
+      - Anthropic API
+    url: https://creativate.tech
+
+languages:
+  - language: German
+    level: Native
+  - language: English
+    level: Professional
+
+recommendations:
+  - name: Lisa Bennewitz
+    role: "Board Member, Entrepreneur, Investor"
+    relationship: Mentor at Creativate
+    excerpt: "Leonardo shows exceptional strategic thinking and execution power driving his startup forward."
+
+  - name: Thomas Metzke
+    role: "Vorstand, Sparkasse Vorpommern"
+    relationship: Senior colleague
+    excerpt: "Exceptional engagement and strategic thinking in building the Karla Plattform."
+
+portfolio:
+  headline: "Product & Technology Leadership"
+  subheadline: "I help companies build products, lead teams, and bridge the gap between technology and business impact."
+  about: >
+    I'm a product and business leader with deep technical roots.
+    Over the past 11 years, I've founded ventures, designed products, and built teams
+    at the intersection of technology, design, and strategy. My strength lies in
+    translating complex technical possibilities into clear product decisions and
+    business outcomes. Whether it's shaping product strategy, leading cross-functional
+    teams, or architecting AI-powered solutions, I bring a hands-on understanding
+    of technology paired with a relentless focus on what actually matters: the people
+    using the product and the business building it.
+  services:
+    - title: "Product Strategy & Design"
+      icon: "\U0001F3AF"
+      description: "From market research to UX strategy — shaping products that solve real problems. I bridge user needs with business goals through design thinking and data-driven decisions."
+    - title: "Technology & Engineering Leadership"
+      icon: "\U0001F4BB"
+      description: "Building teams, choosing architectures, and shipping at the intersection of AI and product. I lead engineering with a product mindset and deliver with technical depth."
+    - title: "Business Development & Operations"
+      icon: "\U0001F4C8"
+      description: "Scaling ventures, optimizing processes, and navigating governance. I turn strategic vision into operational reality with measurable business impact."
+  cta:
+    text: "Let's talk"
+    url: "mailto:leonardo@creativate.tech"
+
+preferences:
+  job_types:
+    - Full-time
+    - Contract
+    - Consulting
+  roles:
+    - CTO
+    - VP Engineering
+    - Head of Engineering
+    - Technical Co-Founder
+    - Product Lead
+    - Technical Lead
+  industries:
+    - Deep Tech
+    - AI/ML
+    - B2B SaaS
+    - Startups
+    - Decision Intelligence
+    - RegTech
+  locations:
+    - Berlin
+    - Remote
+    - Hybrid
+  min_salary: 80000
+  currency: EUR

@@ -3,275 +3,592 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leonardo Bornhaeusser - Founder &amp; Deep Tech Innovator</title>
-  <meta name="description" content="Founder & CTO at Creativate AI Studio. Building explainable decision intelligence for European SMEs.">
-  <meta property="og:title" content="Leonardo Bornhaeusser - Portfolio">
-  <meta property="og:description" content="Founder & Deep Tech Innovator. Building Europe's layer of decision intelligence.">
-  <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Leonardo Bornhaeusser — Product & Technology Leadership</title>
+  <meta name="description" content="I help companies build products, lead teams, and bridge the gap between technology and business impact.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --text-secondary: #555;
+      --text-light: #888;
+      --bg: #ffffff;
+      --bg-alt: #f7f7f8;
+      --accent: #4f46e5;
+      --accent-light: #6366f1;
+      --border: #e5e5e5;
+      --card-bg: #ffffff;
+      --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --card-shadow-hover: 0 4px 12px rgba(0,0,0,0.08);
+      --max-width: 960px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-light); }
+
+    /* ─── Navigation ─── */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 2rem;
+    }
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-name {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+    }
+    .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+    .nav-links a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-links .btn-nav {
+      background: var(--accent);
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: background 0.15s;
+    }
+    .nav-links .btn-nav:hover { background: var(--accent-light); color: white; }
+
+    /* ─── Hero ─── */
+    .hero {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 5rem 2rem 4rem;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+    .hero-text { flex: 1; }
+    .hero-text h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+    .hero-text .subtitle {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 520px;
+    }
+    .hero-cta {
+      display: inline-flex;
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+    }
+    .hero-cta .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-decoration: none;
+    }
+    .btn-filled { background: var(--accent); color: white; }
+    .btn-filled:hover { background: var(--accent-light); color: white; }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+    .hero-image {
+      flex-shrink: 0;
+    }
+    .hero-image img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--bg-alt);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    /* ─── Section base ─── */
+    .section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    .section-alt { background: var(--bg-alt); }
+    .section-alt .section { padding: 4rem 2rem; }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ─── About ─── */
+    .about-text {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      max-width: 680px;
+    }
+
+    /* ─── Services / What I Do ─── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .service-card:hover {
+      box-shadow: var(--card-shadow-hover);
+      transform: translateY(-2px);
+    }
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(79,70,229,0.08);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .service-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ─── Experience ─── */
+    .timeline { position: relative; }
+    .timeline-item {
+      display: flex;
+      gap: 1.5rem;
+      padding-bottom: 2.5rem;
+      position: relative;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-dot {
+      flex-shrink: 0;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-top: 6px;
+      position: relative;
+      z-index: 1;
+    }
+    .timeline-item:not(:last-child) .timeline-dot::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: calc(100% + 2rem);
+      background: var(--border);
+    }
+    .timeline-content h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.15rem;
+    }
+    .timeline-content .company {
+      font-size: 0.95rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .timeline-content .period {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      margin-top: 0.15rem;
+      margin-bottom: 0.5rem;
+    }
+    .timeline-content p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .highlight-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+    .highlight-tag {
+      background: rgba(79,70,229,0.06);
+      color: var(--accent);
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    /* ─── Recommendations ─── */
+    .reco-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .reco-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .reco-card blockquote {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .reco-author { font-size: 0.85rem; font-weight: 600; }
+    .reco-role { font-size: 0.8rem; color: var(--text-light); }
+
+    /* ─── Contact ─── */
+    .contact-inner {
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .contact-inner h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .contact-inner p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.6rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.15s;
+    }
+    .contact-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ─── Footer ─── */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 3rem 1.5rem 2.5rem;
+        gap: 2rem;
+      }
+      .hero-text h1 { font-size: 2rem; }
+      .hero-text .subtitle { max-width: 100%; }
+      .hero-cta { justify-content: center; }
+      .hero-image img { width: 160px; height: 160px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .reco-grid { grid-template-columns: 1fr; }
+      .section { padding: 3rem 1.5rem; }
+      .nav { padding: 0.75rem 1rem; }
+      .nav-links { gap: 0.75rem; }
+    }
+  </style>
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav>
-    <div class="container">
-      <a href="#" class="logo">LB</a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-name">Leonardo Bornhaeusser</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">What I Do</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="hero">
-    <div class="container">
+  <section class="hero">
+    <div class="hero-text">
       <h1>Leonardo Bornhaeusser</h1>
-      <p class="headline">Founder &amp; Deep Tech Innovator</p>
-      <p class="location">Berlin Metropolitan Area</p>
-      <div class="hero-links">
-        <a href="https://www.linkedin.com/in/leonardo-bornh%C3%A4u%C3%9Fer/" class="btn btn-white" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/adminleo" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
-        <a href="mailto:leonardo@creativate.tech" class="btn btn-outline">Contact</a>
+      <p class="subtitle">I help companies build products, lead teams, and bridge the gap between technology and business impact.</p>
+      <div class="hero-cta">
+        <a href="mailto:leonardo@creativate.tech" class="btn btn-filled">Let's talk</a>
+        <a href="https://www.linkedin.com/in/leonardo-bornh%C3%A4u%C3%9Fer/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
       </div>
     </div>
-  </header>
-
-  <!-- About -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About</h2>
-      <p>
-        SME leaders don't need more AI tools &mdash; they need faster, clearer decisions they can defend.
-        At Creativate AI Studio, we turn your data and market signals into explainable forecasts
-        and scenarios that guide concrete actions &mdash; EU-ready and business-first.
-      </p>
-      <p>
-        With a background spanning economics, business informatics, and over a decade of entrepreneurship,
-        I bridge the gap between technical innovation and business impact. I founded my first venture
-        while still in high school 11 years ago. Since then I've built products, led teams, and learned
-        that the best technology serves people, society, and the planet.
-      </p>
+    <div class="hero-image">
+      <img src="/assets/img/profile.jpg" alt="Leonardo Bornhaeusser">
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h3>Technical</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python / FastAPI</span>
-            <span class="skill-tag">TypeScript / Next.js</span>
-            <span class="skill-tag">AI/ML Systems</span>
-            <span class="skill-tag">Explainable AI</span>
-            <span class="skill-tag">Data Engineering</span>
-            <span class="skill-tag">PostgreSQL / Redis</span>
-            <span class="skill-tag">Docker / DevOps</span>
-            <span class="skill-tag">EU AI Act Compliance</span>
-          </div>
-        </div>
-        <div>
-          <h3>Business</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Business Development</span>
-            <span class="skill-tag">Product Strategy</span>
-            <span class="skill-tag">Startup Leadership</span>
-            <span class="skill-tag">Corporate Governance</span>
-            <span class="skill-tag">Investor Relations</span>
-            <span class="skill-tag">UX Research</span>
-            <span class="skill-tag">Tokenization / Web3</span>
-            <span class="skill-tag">Public Speaking</span>
-          </div>
-        </div>
+  <!-- About -->
+  <div class="section-alt">
+    <section class="section" id="about">
+      <h2 class="section-title">About</h2>
+      <p class="about-text">I'm a product and business leader with deep technical roots. Over the past 11 years, I've founded ventures, designed products, and built teams at the intersection of technology, design, and strategy. My strength lies in translating complex technical possibilities into clear product decisions and business outcomes. Whether it's shaping product strategy, leading cross-functional teams, or architecting AI-powered solutions, I bring a hands-on understanding of technology paired with a relentless focus on what actually matters: the people using the product and the business building it.
+</p>
+    </section>
+  </div>
+
+  <!-- What I Do -->
+  <section class="section" id="services">
+    <h2 class="section-title">What I Do</h2>
+    <p class="section-subtitle">How I help companies build great products and scale effectively.</p>
+    <div class="services-grid">
+      
+      <div class="service-card">
+        <div class="service-icon">🎯</div>
+        <h3>Product Strategy & Design</h3>
+        <p>From market research to UX strategy — shaping products that solve real problems. I bridge user needs with business goals through design thinking and data-driven decisions.</p>
       </div>
+      
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>Technology & Engineering Leadership</h3>
+        <p>Building teams, choosing architectures, and shipping at the intersection of AI and product. I lead engineering with a product mindset and deliver with technical depth.</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">📈</div>
+        <h3>Business Development & Operations</h3>
+        <p>Scaling ventures, optimizing processes, and navigating governance. I turn strategic vision into operational reality with measurable business impact.</p>
+      </div>
+      
     </div>
   </section>
 
   <!-- Experience -->
-  <section id="experience">
-    <div class="container">
-      <h2>Experience</h2>
+  <div class="section-alt">
+    <section class="section" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">Where I've built, led, and learned.</p>
       <div class="timeline">
-
+        
         <div class="timeline-item">
-          <h3>Founder / CTO</h3>
-          <div class="company">Creativate AIStudio</div>
-          <div class="meta">Apr 2024 &ndash; Present &middot; Berlin, Germany</div>
-          <p class="description">
-            Building Europe's layer of decision intelligence. Leading development of cNode,
-            a modular AI system for explainable forecasting and scenario planning.
-            EU AI Act compliance-by-design architecture.
-          </p>
-          <ul>
-            <li>Built explainable AI forecasting platform (cNode)</li>
-            <li>EU AI Act compliance-by-design architecture</li>
-            <li>Accepted into Futury Female Founders accelerator</li>
-            <li>Secured strategic angel investors via Tokenize.it</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <h3>CEO &amp; Founder</h3>
-          <div class="company">Born2Hold Ventures GmbH</div>
-          <div class="meta">Dec 2022 &ndash; Present &middot; Berlin, Germany</div>
-          <p class="description">
-            Venture holding and strategic advisory for early-stage startups.
-            Focus on restructuring, corporate governance, and founder support.
-          </p>
-          <ul>
-            <li>Startup venture portfolio management</li>
-            <li>Corporate governance consulting</li>
-            <li>Strategic restructuring advisory</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <h3>COO &amp; Co-Founder</h3>
-          <div class="company">Camsol.io</div>
-          <div class="meta">Nov 2022 &ndash; Apr 2025 &middot; Berlin, Germany</div>
-          <p class="description">
-            B2B web development and digital solutions. Managed operations,
-            product development, and client relationships.
-          </p>
-          <ul>
-            <li>Scaled B2B web development operations</li>
-            <li>Led product development and UX strategy</li>
-            <li>Managed cross-functional development team</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Trainee Business Development</h3>
-          <div class="company">Sparkasse Vorpommern</div>
-          <div class="meta">Apr 2021 &ndash; Oct 2022 &middot; Mecklenburg-West Pomerania</div>
-          <p class="description">
-            Business development trainee focused on digital innovation
-            and new business models in the banking sector.
-          </p>
-          <ul>
-            <li>Contributed to Karla Plattform GmbH launch</li>
-            <li>UX research and B2B strategy</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Product Designer</h3>
-          <div class="company">Karla Plattform GmbH</div>
-          <div class="meta">Apr 2021 &ndash; Oct 2022 &middot; Greifswald, Germany</div>
-          <p class="description">
-            Product design and corporate identity for a digital platform venture
-            within the Sparkasse ecosystem.
-          </p>
-          <ul>
-            <li>Corporate identity design</li>
-            <li>Software development contribution</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="education-grid">
-        <div class="education-card">
-          <h3>Bachelor of Science &mdash; Economics</h3>
-          <div class="institution">Universit&auml;t Greifswald</div>
-          <div class="period">2018 &ndash; 2021</div>
-        </div>
-        <div class="education-card">
-          <h3>Bachelor of Science &mdash; Business Informatics</h3>
-          <div class="institution">WINGS / Wismar University</div>
-          <div class="period">Oct 2021 &ndash; Sep 2022</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>cNode</h3>
-          <p>AI-augmented decision workspace with explainable forecasting and scenario planning for European SMEs.</p>
-          <div class="tech">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>Next.js</span>
-            <span>PostgreSQL</span>
-            <span>TimescaleDB</span>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Founder / CTO</h3>
+            <div class="company">Creativate AIStudio</div>
+            <div class="period">Apr 2024 - Present &middot; Berlin, Germany</div>
+            <p>Building Europe's layer of decision intelligence. Leading development of cNode,
+a modular AI system for explainable forecasting and scenario planning.
+EU AI Act compliance architecture. B2B deep-tech venture with co-founders
+Lisa Bennewitz (CFO) and Stella Manga Chesnay (Legal/GDPR).</p>
+            
+            <div class="highlight-tags">
+              
+              <span class="highlight-tag">Built explainable AI forecasting platform (cNode)</span>
+              
+              <span class="highlight-tag">EU AI Act compliance-by-design architecture</span>
+              
+              <span class="highlight-tag">Accepted into Futury Female Founders accelerator program</span>
+              
+              <span class="highlight-tag">Secured strategic angel investors via Tokenize.it</span>
+              
+            </div>
+            
           </div>
         </div>
-        <div class="project-card">
-          <h3>Creativate AI Studio</h3>
-          <p>Deep-tech venture studio building Europe's decision intelligence layer. Explainable, independent, impactful.</p>
-          <div class="tech">
-            <span>Python</span>
-            <span>TypeScript</span>
-            <span>Docker</span>
-            <span>Anthropic API</span>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>CEO & Founder</h3>
+            <div class="company">Born2Hold Ventures GmbH</div>
+            <div class="period">Dec 2022 - Present &middot; Berlin, Germany</div>
+            <p>Venture holding and strategic advisory for early-stage startups.
+Focus on restructuring, corporate governance, and founder support.</p>
+            
+            <div class="highlight-tags">
+              
+              <span class="highlight-tag">Startup venture portfolio management</span>
+              
+              <span class="highlight-tag">Corporate governance consulting</span>
+              
+              <span class="highlight-tag">Strategic restructuring advisory</span>
+              
+            </div>
+            
           </div>
         </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>COO & Co-Founder</h3>
+            <div class="company">Camsol.io</div>
+            <div class="period">Nov 2022 - Apr 2025 &middot; Berlin, Germany</div>
+            <p>B2B web development and digital solutions. Managed operations,
+product development, and client relationships.</p>
+            
+            <div class="highlight-tags">
+              
+              <span class="highlight-tag">Scaled B2B web development operations</span>
+              
+              <span class="highlight-tag">Led product development and UX strategy</span>
+              
+              <span class="highlight-tag">Managed cross-functional development team</span>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Trainee Business Development</h3>
+            <div class="company">Sparkasse Vorpommern</div>
+            <div class="period">Apr 2021 - Oct 2022 &middot; Mecklenburg-West Pomerania, Germany</div>
+            <p>Business development trainee focused on digital innovation
+and new business models in the banking sector.</p>
+            
+            <div class="highlight-tags">
+              
+              <span class="highlight-tag">Contributed to Karla Plattform GmbH launch</span>
+              
+              <span class="highlight-tag">UX research and B2B strategy</span>
+              
+              <span class="highlight-tag">Digital transformation initiatives</span>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Product Designer</h3>
+            <div class="company">Karla Plattform GmbH</div>
+            <div class="period">Apr 2021 - Oct 2022 &middot; Greifswald, Germany</div>
+            <p>Product design and corporate identity for a digital platform venture
+within the Sparkasse ecosystem.</p>
+            
+            <div class="highlight-tags">
+              
+              <span class="highlight-tag">Corporate identity design</span>
+              
+              <span class="highlight-tag">Software development contribution</span>
+              
+              <span class="highlight-tag">Product-market fit research</span>
+              
+            </div>
+            
+          </div>
+        </div>
+        
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- Recommendations -->
-  <section id="recommendations">
-    <div class="container">
-      <h2>Recommendations</h2>
-      <div class="recommendations-grid">
-        <div class="rec-card">
-          <blockquote>
-            &ldquo;Leonardo shows exceptional strategic thinking and execution power driving his startup forward.
-            He combines entrepreneurial spirit with clear structure and always asks the right questions.&rdquo;
-          </blockquote>
-          <div class="author">Lisa Bennewitz</div>
-          <div class="author-role">Board Member, Entrepreneur, Investor &middot; Mentor at Creativate</div>
-        </div>
-        <div class="rec-card">
-          <blockquote>
-            &ldquo;Exceptional engagement and strategic thinking in building the Karla Plattform.
-            Leonardo brings entrepreneurial spirit and execution strength that make him valuable in any organization.&rdquo;
-          </blockquote>
-          <div class="author">Thomas Metzke</div>
-          <div class="author-role">Vorstand, Sparkasse Vorpommern</div>
-        </div>
+  
+  <section class="section">
+    <h2 class="section-title">What Others Say</h2>
+    <p class="section-subtitle">Recommendations from colleagues and mentors.</p>
+    <div class="reco-grid">
+      
+      <div class="reco-card">
+        <blockquote>"Leonardo shows exceptional strategic thinking and execution power driving his startup forward."</blockquote>
+        <div class="reco-author">Lisa Bennewitz</div>
+        <div class="reco-role">Board Member, Entrepreneur, Investor</div>
       </div>
+      
+      <div class="reco-card">
+        <blockquote>"Exceptional engagement and strategic thinking in building the Karla Plattform."</blockquote>
+        <div class="reco-author">Thomas Metzke</div>
+        <div class="reco-role">Vorstand, Sparkasse Vorpommern</div>
+      </div>
+      
     </div>
   </section>
+  
 
   <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <p>Interested in working together? Let's connect.</p>
-      <div class="contact-links">
-        <a href="mailto:leonardo@creativate.tech" class="btn-accent">Send Email</a>
-        <a href="https://www.linkedin.com/in/leonardo-bornh%C3%A4u%C3%9Fer/" class="btn-accent" target="_blank" rel="noopener">LinkedIn</a>
+  <div class="section-alt">
+    <section class="section" id="contact">
+      <div class="contact-inner">
+        <h2>Let's talk</h2>
+        <p>I'm always open to interesting conversations about product, technology, and building things that matter.</p>
+        <div class="contact-links">
+          <a href="mailto:leonardo@creativate.tech" class="contact-link">&#9993; Email</a>
+          <a href="https://www.linkedin.com/in/leonardo-bornh%C3%A4u%C3%9Fer/" target="_blank" rel="noopener" class="contact-link">&#128279; LinkedIn</a>
+          <a href="https://github.com/adminleo" target="_blank" rel="noopener" class="contact-link">&#128187; GitHub</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Leonardo Bornhaeusser. All rights reserved.</p>
-    </div>
+  <footer class="footer">
+    &copy; 2026 Leonardo Bornhaeusser. Built in Berlin.
   </footer>
 
 </body>
