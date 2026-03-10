@@ -1,211 +1,161 @@
 personal:
-  name: Leonardo Bornhaeusser
-  location: Berlin Metropolitan Area
-  email: leonardo@creativate.tech
-  linkedin: https://www.linkedin.com/in/leonardo-bornh%C3%A4u%C3%9Fer/
-  github: https://github.com/adminleo
-  headline: Founder & Deep Tech Innovator
-  tagline: Building Europe's layer of decision intelligence - explainable, independent, and impactful.
+  name: Lovis Samina
+  location: Berlin, Germany
+  email: saminalasj@gmail.com
+  phone: "+49015905270753"
+  linkedin: https://www.linkedin.com/in/lovis-samina/
+  github: https://github.com/lovisayla-ship-it
+  headline: Project and Research Professional
+  tagline: Impact / NGO / Policy — managing projects, coordinating teams, and delivering research in sensitive contexts.
 
 about: |
-  SME leaders don't need more AI tools - they need faster, clearer decisions they can defend.
-  At Creativate AI Studio, we turn your data and market signals into explainable forecasts
-  and scenarios that guide concrete actions - EU-ready and business-first.
-
-  With a background spanning economics, business informatics, and over a decade of entrepreneurship,
-  I bridge the gap between technical innovation and business impact. I founded my first venture
-  while still in high school 11 years ago. Since then I've built products, led teams, and learned
-  that the best technology serves people, society, and the planet.
+  Project and research professional with a background in political science and several
+  years of experience in NGO work, international project coordination, and freelance
+  project delivery. Proven experience managing projects across four European countries,
+  coordinating teams of up to 45 people, and supporting evidence-based social and
+  environmental initiatives in sensitive and time-critical contexts.
 
 skills:
   technical:
-    - Python / FastAPI
-    - TypeScript / Next.js
-    - AI/ML Systems
-    - Explainable AI
-    - Data Engineering
-    - PostgreSQL / Redis
-    - Docker / DevOps
-    - EU AI Act Compliance
-  business:
-    - Business Development
-    - Product Strategy
-    - Startup Leadership
-    - Corporate Governance
-    - Investor Relations
-    - UX Research
-    - Tokenization / Web3
-    - Public Speaking
+    - Project Management & Operations (end-to-end)
+    - Qualitative Field & Desk Research
+    - International Team Coordination
+    - Stakeholder & Interface Management
+    - Documentation & Analysis
+    - Work in Sensitive Operational Contexts
+  additional:
+    - Drone license
+    - Car license
+    - Boat license
+    - Industrial climbing
+    - Research trainings (online and field-based)
 
 experience:
-  - title: Founder / CTO
-    company: Creativate AIStudio
-    url: https://creativate.tech
-    period: Apr 2024 - Present
+  - title: Freelance Project & Research Coordinator
+    company: Self-employed
+    period: Jun 2025 - Present
+    location: Berlin, Germany
+    type: Freelance
+    description: |
+      Conceptualization and delivery of political and social projects.
+      Conducting qualitative field and desk research in operational contexts.
+      Full project lifecycle responsibility.
+    highlights:
+      - Full project lifecycle responsibility (planning, execution, follow-up)
+      - Coordination of project contributors (up to 45 people)
+      - Conducting qualitative field and desk research in operational contexts
+      - Structured documentation and evaluation of project outcomes
+
+  - title: Junior Action Coordinator (Trainee) / Project Coordinator
+    company: Greenpeace e.V.
+    period: Dates on request
+    location: Hamburg, Germany
+    type: Full-time
+    description: |
+      Planning and implementation of campaigns and projects.
+      Coordination of international project teams across four European countries.
+    highlights:
+      - Coordination of international project teams across four European countries
+      - Collaboration with research, communications, and legal teams
+      - Operational responsibility in high-visibility and time-critical environments
+      - Support in research, documentation, and reporting
+
+  - title: Action-related Project Support
+    company: Greenpeace e.V.
+    period: Dates on request
+    location: Hamburg, Germany
+    type: Full-time
+    description: |
+      Operational support for action and event planning.
+      Coordination of logistics and cross-team communication.
+    highlights:
+      - Operational support for action and event planning
+      - Coordination of logistics and cross-team communication
+      - Technical and hands-on support within project-based deployments
+
+  - title: Shift Supervisor (Service & Operations)
+    company: JO Kaffeemitte GmbH
+    period: Dates on request
     location: Berlin, Germany
     type: Full-time
     description: |
-      Building Europe's layer of decision intelligence. Leading development of cNode,
-      a modular AI system for explainable forecasting and scenario planning.
-      EU AI Act compliance architecture. B2B deep-tech venture with co-founders
-      Lisa Bennewitz (CFO) and Stella Manga Chesnay (Legal/GDPR).
+      Shift responsibility and coordination of staff.
+      Organization of daily operational workflows.
     highlights:
-      - Built explainable AI forecasting platform (cNode)
-      - EU AI Act compliance-by-design architecture
-      - Accepted into Futury Female Founders accelerator program
-      - Secured strategic angel investors via Tokenize.it
-
-  - title: CEO & Founder
-    company: Born2Hold Ventures GmbH
-    period: Dec 2022 - Present
-    location: Berlin, Germany
-    type: Self-employed
-    description: |
-      Venture holding and strategic advisory for early-stage startups.
-      Focus on restructuring, corporate governance, and founder support.
-    highlights:
-      - Startup venture portfolio management
-      - Corporate governance consulting
-      - Strategic restructuring advisory
-
-  - title: COO & Co-Founder
-    company: Camsol.io
-    period: Nov 2022 - Apr 2025
-    location: Berlin, Germany
-    type: Full-time
-    description: |
-      B2B web development and digital solutions. Managed operations,
-      product development, and client relationships.
-    highlights:
-      - Scaled B2B web development operations
-      - Led product development and UX strategy
-      - Managed cross-functional development team
-
-  - title: Trainee Business Development
-    company: Sparkasse Vorpommern
-    period: Apr 2021 - Oct 2022
-    location: Mecklenburg-West Pomerania, Germany
-    type: Full-time
-    description: |
-      Business development trainee focused on digital innovation
-      and new business models in the banking sector.
-    highlights:
-      - Contributed to Karla Plattform GmbH launch
-      - UX research and B2B strategy
-      - Digital transformation initiatives
-
-  - title: Product Designer
-    company: Karla Plattform GmbH
-    period: Apr 2021 - Oct 2022
-    location: Greifswald, Germany
-    type: Full-time
-    description: |
-      Product design and corporate identity for a digital platform venture
-      within the Sparkasse ecosystem.
-    highlights:
-      - Corporate identity design
-      - Software development contribution
-      - Product-market fit research
+      - Shift responsibility and coordination of staff
+      - Organization of daily operational workflows
+      - Cash handling and basic accounting tasks
 
 education:
-  - degree: Bachelor of Science - Economics
-    institution: "Universit\xE4t Greifswald"
-    period: 2018 - 2021
+  - degree: Bachelor of Arts - Political Science
+    institution: "Freie Universit\xE4t Berlin"
+    period: Completed
     highlights:
-      - SWOT Analysis specialization
+      - Grade: Good
 
-  - degree: Bachelor of Science - Wirtschaftsinformatik (Business Informatics)
-    institution: WINGS Professional Studies - Wismar University
-    period: Oct 2021 - Sep 2022
-    highlights:
-      - Agile Methods
-      - Product Development
-
-projects:
-  - name: cNode
-    description: AI-augmented decision workspace with explainable forecasting and scenario planning
-    tech:
-      - Python
-      - FastAPI
-      - Next.js
-      - PostgreSQL
-      - TimescaleDB
-    url: https://creativate.tech
-
-  - name: Creativate AI Studio
-    description: Deep-tech venture studio building Europe's decision intelligence layer
-    tech:
-      - Python
-      - TypeScript
-      - Docker
-      - Anthropic API
-    url: https://creativate.tech
+projects: []
 
 languages:
   - language: German
     level: Native
   - language: English
-    level: Professional
+    level: Fluent
+  - language: Italian
+    level: Good
+  - language: Spanish
+    level: Good
+  - language: French
+    level: Basic knowledge
 
-recommendations:
-  - name: Lisa Bennewitz
-    role: "Board Member, Entrepreneur, Investor"
-    relationship: Mentor at Creativate
-    excerpt: "Leonardo shows exceptional strategic thinking and execution power driving his startup forward."
-
-  - name: Thomas Metzke
-    role: "Vorstand, Sparkasse Vorpommern"
-    relationship: Senior colleague
-    excerpt: "Exceptional engagement and strategic thinking in building the Karla Plattform."
+recommendations: []
 
 portfolio:
-  headline: "Product & Technology Leadership"
-  subheadline: "I help companies build products, lead teams, and bridge the gap between technology and business impact."
+  headline: "Project & Research Professional"
+  subheadline: "I manage projects, coordinate international teams, and deliver research in impact-driven and policy contexts."
   about: >
-    I'm a product and business leader with deep technical roots.
-    Over the past 11 years, I've founded ventures, designed products, and built teams
-    at the intersection of technology, design, and strategy. My strength lies in
-    translating complex technical possibilities into clear product decisions and
-    business outcomes. Whether it's shaping product strategy, leading cross-functional
-    teams, or architecting AI-powered solutions, I bring a hands-on understanding
-    of technology paired with a relentless focus on what actually matters: the people
-    using the product and the business building it.
+    I'm a project and research professional with a political science background
+    and hands-on experience in NGO work, international coordination, and freelance
+    project delivery. I've managed projects across four European countries,
+    coordinated teams of up to 45 people, and supported evidence-based social
+    and environmental initiatives in sensitive and time-critical contexts.
+    My strength lies in bringing structure, reliability, and clarity to complex
+    operational environments.
   services:
-    - title: "Product Strategy & Design"
-      icon: "\U0001F3AF"
-      description: "From market research to UX strategy — shaping products that solve real problems. I bridge user needs with business goals through design thinking and data-driven decisions."
-    - title: "Technology & Engineering Leadership"
-      icon: "\U0001F4BB"
-      description: "Building teams, choosing architectures, and shipping at the intersection of AI and product. I lead engineering with a product mindset and deliver with technical depth."
-    - title: "Business Development & Operations"
-      icon: "\U0001F4C8"
-      description: "Scaling ventures, optimizing processes, and navigating governance. I turn strategic vision into operational reality with measurable business impact."
+    - title: "Project Coordination"
+      icon: "\U0001F4CB"
+      description: "End-to-end project management from planning through execution and evaluation. Experienced in coordinating teams across countries and managing complex stakeholder landscapes."
+    - title: "Research & Analysis"
+      icon: "\U0001F50D"
+      description: "Qualitative field and desk research in operational and sensitive contexts. Structured documentation, evaluation, and evidence-based reporting."
+    - title: "Operations & Logistics"
+      icon: "\U0001F310"
+      description: "Operational support for campaigns, events, and deployments. Cross-team communication, logistics coordination, and hands-on delivery in time-critical environments."
   cta:
     text: "Let's talk"
-    url: "mailto:leonardo@creativate.tech"
+    url: "mailto:saminalasj@gmail.com"
 
 preferences:
   job_types:
     - Full-time
+    - Freelance
     - Contract
-    - Consulting
   roles:
-    - CTO
-    - VP Engineering
-    - Head of Engineering
-    - Technical Co-Founder
-    - Product Lead
-    - Technical Lead
+    - Project Coordinator
+    - Project Manager
+    - Research Coordinator
+    - Programme Officer
+    - Campaign Coordinator
+    - Operations Manager
   industries:
-    - Deep Tech
-    - AI/ML
-    - B2B SaaS
-    - Startups
-    - Decision Intelligence
-    - RegTech
+    - NGO / Non-profit
+    - Environmental Policy
+    - Human Rights
+    - Social Impact
+    - International Development
+    - Policy & Advocacy
   locations:
     - Berlin
     - Remote
-    - Hybrid
-  min_salary: 80000
+    - Hamburg
+  min_salary: 45000
   currency: EUR

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leonardo Bornhaeusser — Product & Technology Leadership</title>
-  <meta name="description" content="I help companies build products, lead teams, and bridge the gap between technology and business impact.">
+  <title>Lovis Samina &mdash; Project &amp; Research Professional</title>
+  <meta name="description" content="Project and research professional with experience in NGO work, international coordination, and evidence-based project delivery.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -13,8 +13,8 @@
       --text-light: #888;
       --bg: #ffffff;
       --bg-alt: #f7f7f8;
-      --accent: #4f46e5;
-      --accent-light: #6366f1;
+      --accent: #2d6a4f;
+      --accent-light: #40916c;
       --border: #e5e5e5;
       --card-bg: #ffffff;
       --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
@@ -32,7 +32,7 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { color: var(--accent-light); }
 
-    /* ─── Navigation ─── */
+    /* Navigation */
     .nav {
       position: sticky;
       top: 0;
@@ -73,7 +73,7 @@
     }
     .nav-links .btn-nav:hover { background: var(--accent-light); color: white; }
 
-    /* ─── Hero ─── */
+    /* Hero */
     .hero {
       max-width: var(--max-width);
       margin: 0 auto;
@@ -122,9 +122,7 @@
       border: 1px solid var(--border);
     }
     .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
-    .hero-image {
-      flex-shrink: 0;
-    }
+    .hero-image { flex-shrink: 0; }
     .hero-image img {
       width: 220px;
       height: 220px;
@@ -134,7 +132,7 @@
       box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     }
 
-    /* ─── Section base ─── */
+    /* Section base */
     .section {
       max-width: var(--max-width);
       margin: 0 auto;
@@ -154,7 +152,7 @@
       margin-bottom: 2.5rem;
     }
 
-    /* ─── About ─── */
+    /* About */
     .about-text {
       font-size: 1.05rem;
       color: var(--text-secondary);
@@ -162,7 +160,7 @@
       max-width: 680px;
     }
 
-    /* ─── Services / What I Do ─── */
+    /* Services / What I Do */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -182,7 +180,7 @@
     .service-icon {
       width: 48px;
       height: 48px;
-      background: rgba(79,70,229,0.08);
+      background: rgba(45,106,79,0.08);
       border-radius: 12px;
       display: flex;
       align-items: center;
@@ -201,7 +199,7 @@
       line-height: 1.6;
     }
 
-    /* ─── Experience ─── */
+    /* Experience */
     .timeline { position: relative; }
     .timeline-item {
       display: flex;
@@ -258,7 +256,7 @@
       margin-top: 0.6rem;
     }
     .highlight-tag {
-      background: rgba(79,70,229,0.06);
+      background: rgba(45,106,79,0.06);
       color: var(--accent);
       padding: 0.2rem 0.6rem;
       border-radius: 6px;
@@ -266,29 +264,48 @@
       font-weight: 600;
     }
 
-    /* ─── Recommendations ─── */
-    .reco-grid {
+    /* Skills */
+    .skills-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
+      gap: 2rem;
     }
-    .reco-card {
+    .skills-grid h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .skill-tag {
+      background: rgba(45,106,79,0.06);
+      color: var(--accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* Languages */
+    .lang-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .lang-item {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.75rem;
+      border-radius: 8px;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.9rem;
     }
-    .reco-card blockquote {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-      font-style: italic;
-      margin-bottom: 1rem;
-    }
-    .reco-author { font-size: 0.85rem; font-weight: 600; }
-    .reco-role { font-size: 0.8rem; color: var(--text-light); }
+    .lang-item strong { font-weight: 600; }
+    .lang-item span { color: var(--text-light); }
 
-    /* ─── Contact ─── */
+    /* Contact */
     .contact-inner {
       text-align: center;
       max-width: 500px;
@@ -328,7 +345,7 @@
       color: var(--accent);
     }
 
-    /* ─── Footer ─── */
+    /* Footer */
     .footer {
       border-top: 1px solid var(--border);
       padding: 2rem;
@@ -337,7 +354,7 @@
       color: var(--text-light);
     }
 
-    /* ─── Responsive ─── */
+    /* Responsive */
     @media (max-width: 768px) {
       .hero {
         flex-direction: column-reverse;
@@ -350,7 +367,7 @@
       .hero-cta { justify-content: center; }
       .hero-image img { width: 160px; height: 160px; }
       .services-grid { grid-template-columns: 1fr; }
-      .reco-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr; }
       .section { padding: 3rem 1.5rem; }
       .nav { padding: 0.75rem 1rem; }
       .nav-links { gap: 0.75rem; }
@@ -362,7 +379,7 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-inner">
-      <span class="nav-name">Leonardo Bornhaeusser</span>
+      <span class="nav-name">Lovis Samina</span>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#services">What I Do</a>
@@ -375,15 +392,15 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Leonardo Bornhaeusser</h1>
-      <p class="subtitle">I help companies build products, lead teams, and bridge the gap between technology and business impact.</p>
+      <h1>Lovis Samina</h1>
+      <p class="subtitle">I manage projects, coordinate international teams, and deliver research in impact-driven and policy contexts.</p>
       <div class="hero-cta">
-        <a href="mailto:leonardo@creativate.tech" class="btn btn-filled">Let's talk</a>
-        <a href="https://www.linkedin.com/in/leonardo-bornh%C3%A4u%C3%9Fer/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        <a href="mailto:saminalasj@gmail.com" class="btn btn-filled">Let's talk</a>
+        <a href="https://www.linkedin.com/in/lovis-samina/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
       </div>
     </div>
     <div class="hero-image">
-      <img src="/adminleo-portfolio/assets/img/profile.jpg" alt="Leonardo Bornhaeusser">
+      <img src="/lovisayla-portfolio/assets/img/profile.jpg" alt="Lovis Samina">
     </div>
   </section>
 
@@ -391,35 +408,34 @@
   <div class="section-alt">
     <section class="section" id="about">
       <h2 class="section-title">About</h2>
-      <p class="about-text">I'm a product and business leader with deep technical roots. Over the past 11 years, I've founded ventures, designed products, and built teams at the intersection of technology, design, and strategy. My strength lies in translating complex technical possibilities into clear product decisions and business outcomes. Whether it's shaping product strategy, leading cross-functional teams, or architecting AI-powered solutions, I bring a hands-on understanding of technology paired with a relentless focus on what actually matters: the people using the product and the business building it.
-</p>
+      <p class="about-text">Project and research professional with a political science background and hands-on experience in NGO work, international coordination, and freelance project delivery. I've managed projects across four European countries, coordinated teams of up to 45 people, and supported evidence-based social and environmental initiatives in sensitive and time-critical contexts. My strength lies in bringing structure, reliability, and clarity to complex operational environments.</p>
     </section>
   </div>
 
   <!-- What I Do -->
   <section class="section" id="services">
     <h2 class="section-title">What I Do</h2>
-    <p class="section-subtitle">How I help companies build great products and scale effectively.</p>
+    <p class="section-subtitle">How I help organizations deliver impact.</p>
     <div class="services-grid">
-      
+
       <div class="service-card">
-        <div class="service-icon">🎯</div>
-        <h3>Product Strategy & Design</h3>
-        <p>From market research to UX strategy — shaping products that solve real problems. I bridge user needs with business goals through design thinking and data-driven decisions.</p>
+        <div class="service-icon">&#128203;</div>
+        <h3>Project Coordination</h3>
+        <p>End-to-end project management from planning through execution and evaluation. Experienced in coordinating teams across countries and managing complex stakeholder landscapes.</p>
       </div>
-      
+
       <div class="service-card">
-        <div class="service-icon">💻</div>
-        <h3>Technology & Engineering Leadership</h3>
-        <p>Building teams, choosing architectures, and shipping at the intersection of AI and product. I lead engineering with a product mindset and deliver with technical depth.</p>
+        <div class="service-icon">&#128269;</div>
+        <h3>Research &amp; Analysis</h3>
+        <p>Qualitative field and desk research in operational and sensitive contexts. Structured documentation, evaluation, and evidence-based reporting.</p>
       </div>
-      
+
       <div class="service-card">
-        <div class="service-icon">📈</div>
-        <h3>Business Development & Operations</h3>
-        <p>Scaling ventures, optimizing processes, and navigating governance. I turn strategic vision into operational reality with measurable business impact.</p>
+        <div class="service-icon">&#127760;</div>
+        <h3>Operations &amp; Logistics</h3>
+        <p>Operational support for campaigns, events, and deployments. Cross-team communication, logistics coordination, and hands-on delivery in time-critical environments.</p>
       </div>
-      
+
     </div>
   </section>
 
@@ -427,160 +443,112 @@
   <div class="section-alt">
     <section class="section" id="experience">
       <h2 class="section-title">Experience</h2>
-      <p class="section-subtitle">Where I've built, led, and learned.</p>
+      <p class="section-subtitle">Where I've coordinated, researched, and delivered.</p>
       <div class="timeline">
-        
+
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h3>Founder / CTO</h3>
-            <div class="company">Creativate AIStudio</div>
-            <div class="period">Apr 2024 - Present &middot; Berlin, Germany</div>
-            <p>Building Europe's layer of decision intelligence. Leading development of cNode,
-a modular AI system for explainable forecasting and scenario planning.
-EU AI Act compliance architecture. B2B deep-tech venture with co-founders
-Lisa Bennewitz (CFO) and Stella Manga Chesnay (Legal/GDPR).</p>
-            
+            <h3>Freelance Project &amp; Research Coordinator</h3>
+            <div class="company">Self-employed</div>
+            <div class="period">Jun 2025 &ndash; Present &middot; Berlin, Germany</div>
+            <p>Conceptualization and delivery of political and social projects. Conducting qualitative field and desk research in operational contexts.</p>
             <div class="highlight-tags">
-              
-              <span class="highlight-tag">Built explainable AI forecasting platform (cNode)</span>
-              
-              <span class="highlight-tag">EU AI Act compliance-by-design architecture</span>
-              
-              <span class="highlight-tag">Accepted into Futury Female Founders accelerator program</span>
-              
-              <span class="highlight-tag">Secured strategic angel investors via Tokenize.it</span>
-              
+              <span class="highlight-tag">Full project lifecycle (planning, execution, follow-up)</span>
+              <span class="highlight-tag">Coordination of up to 45 contributors</span>
+              <span class="highlight-tag">Qualitative field &amp; desk research</span>
+              <span class="highlight-tag">Structured documentation &amp; evaluation</span>
             </div>
-            
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h3>CEO & Founder</h3>
-            <div class="company">Born2Hold Ventures GmbH</div>
-            <div class="period">Dec 2022 - Present &middot; Berlin, Germany</div>
-            <p>Venture holding and strategic advisory for early-stage startups.
-Focus on restructuring, corporate governance, and founder support.</p>
-            
+            <h3>Junior Action Coordinator / Project Coordinator</h3>
+            <div class="company">Greenpeace e.V.</div>
+            <div class="period">Hamburg, Germany &middot; Full-time</div>
+            <p>Planning and implementation of campaigns and projects. Coordination of international project teams across four European countries.</p>
             <div class="highlight-tags">
-              
-              <span class="highlight-tag">Startup venture portfolio management</span>
-              
-              <span class="highlight-tag">Corporate governance consulting</span>
-              
-              <span class="highlight-tag">Strategic restructuring advisory</span>
-              
+              <span class="highlight-tag">International team coordination (4 countries)</span>
+              <span class="highlight-tag">Research, communications &amp; legal collaboration</span>
+              <span class="highlight-tag">High-visibility operational responsibility</span>
             </div>
-            
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h3>COO & Co-Founder</h3>
-            <div class="company">Camsol.io</div>
-            <div class="period">Nov 2022 - Apr 2025 &middot; Berlin, Germany</div>
-            <p>B2B web development and digital solutions. Managed operations,
-product development, and client relationships.</p>
-            
+            <h3>Action-related Project Support</h3>
+            <div class="company">Greenpeace e.V.</div>
+            <div class="period">Hamburg, Germany</div>
+            <p>Operational support for action and event planning. Coordination of logistics and cross-team communication.</p>
             <div class="highlight-tags">
-              
-              <span class="highlight-tag">Scaled B2B web development operations</span>
-              
-              <span class="highlight-tag">Led product development and UX strategy</span>
-              
-              <span class="highlight-tag">Managed cross-functional development team</span>
-              
+              <span class="highlight-tag">Action &amp; event logistics</span>
+              <span class="highlight-tag">Cross-team communication</span>
+              <span class="highlight-tag">Hands-on project deployments</span>
             </div>
-            
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h3>Trainee Business Development</h3>
-            <div class="company">Sparkasse Vorpommern</div>
-            <div class="period">Apr 2021 - Oct 2022 &middot; Mecklenburg-West Pomerania, Germany</div>
-            <p>Business development trainee focused on digital innovation
-and new business models in the banking sector.</p>
-            
+            <h3>Shift Supervisor (Service &amp; Operations)</h3>
+            <div class="company">JO Kaffeemitte GmbH</div>
+            <div class="period">Berlin, Germany</div>
+            <p>Shift responsibility and coordination of staff. Organization of daily operational workflows.</p>
             <div class="highlight-tags">
-              
-              <span class="highlight-tag">Contributed to Karla Plattform GmbH launch</span>
-              
-              <span class="highlight-tag">UX research and B2B strategy</span>
-              
-              <span class="highlight-tag">Digital transformation initiatives</span>
-              
+              <span class="highlight-tag">Staff coordination</span>
+              <span class="highlight-tag">Operational workflows</span>
             </div>
-            
           </div>
         </div>
-        
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Product Designer</h3>
-            <div class="company">Karla Plattform GmbH</div>
-            <div class="period">Apr 2021 - Oct 2022 &middot; Greifswald, Germany</div>
-            <p>Product design and corporate identity for a digital platform venture
-within the Sparkasse ecosystem.</p>
-            
-            <div class="highlight-tags">
-              
-              <span class="highlight-tag">Corporate identity design</span>
-              
-              <span class="highlight-tag">Software development contribution</span>
-              
-              <span class="highlight-tag">Product-market fit research</span>
-              
-            </div>
-            
-          </div>
-        </div>
-        
+
       </div>
     </section>
   </div>
 
-  <!-- Recommendations -->
-  
-  <section class="section">
-    <h2 class="section-title">What Others Say</h2>
-    <p class="section-subtitle">Recommendations from colleagues and mentors.</p>
-    <div class="reco-grid">
-      
-      <div class="reco-card">
-        <blockquote>"Leonardo shows exceptional strategic thinking and execution power driving his startup forward."</blockquote>
-        <div class="reco-author">Lisa Bennewitz</div>
-        <div class="reco-role">Board Member, Entrepreneur, Investor</div>
+  <!-- Skills & Languages -->
+  <section class="section" id="skills">
+    <h2 class="section-title">Skills &amp; Languages</h2>
+    <p class="section-subtitle">Core competencies and language proficiency.</p>
+    <div class="skills-grid">
+      <div>
+        <h3>Core Competencies</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Project Management (end-to-end)</span>
+          <span class="skill-tag">Qualitative Research</span>
+          <span class="skill-tag">International Coordination</span>
+          <span class="skill-tag">Stakeholder Management</span>
+          <span class="skill-tag">Documentation &amp; Analysis</span>
+          <span class="skill-tag">Sensitive Operational Contexts</span>
+        </div>
       </div>
-      
-      <div class="reco-card">
-        <blockquote>"Exceptional engagement and strategic thinking in building the Karla Plattform."</blockquote>
-        <div class="reco-author">Thomas Metzke</div>
-        <div class="reco-role">Vorstand, Sparkasse Vorpommern</div>
+      <div>
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">German &mdash; Native</span>
+          <span class="skill-tag">English &mdash; Fluent</span>
+          <span class="skill-tag">Italian &mdash; Good</span>
+          <span class="skill-tag">Spanish &mdash; Good</span>
+          <span class="skill-tag">French &mdash; Basic</span>
+        </div>
       </div>
-      
     </div>
   </section>
-  
 
   <!-- Contact -->
   <div class="section-alt">
     <section class="section" id="contact">
       <div class="contact-inner">
         <h2>Let's talk</h2>
-        <p>I'm always open to interesting conversations about product, technology, and building things that matter.</p>
+        <p>Interested in working together on impactful projects? I'd love to connect.</p>
         <div class="contact-links">
-          <a href="mailto:leonardo@creativate.tech" class="contact-link">&#9993; Email</a>
-          <a href="https://www.linkedin.com/in/leonardo-bornh%C3%A4u%C3%9Fer/" target="_blank" rel="noopener" class="contact-link">&#128279; LinkedIn</a>
-          <a href="https://github.com/adminleo" target="_blank" rel="noopener" class="contact-link">&#128187; GitHub</a>
+          <a href="mailto:saminalasj@gmail.com" class="contact-link">&#9993; Email</a>
+          <a href="https://www.linkedin.com/in/lovis-samina/" target="_blank" rel="noopener" class="contact-link">&#128279; LinkedIn</a>
+          <a href="https://github.com/lovisayla-ship-it" target="_blank" rel="noopener" class="contact-link">&#128187; GitHub</a>
         </div>
       </div>
     </section>
@@ -588,7 +556,7 @@ within the Sparkasse ecosystem.</p>
 
   <!-- Footer -->
   <footer class="footer">
-    &copy; 2026 Leonardo Bornhaeusser. Built in Berlin.
+    &copy; 2026 Lovis Samina. Built in Berlin.
   </footer>
 
 </body>
