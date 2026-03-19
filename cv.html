@@ -118,14 +118,19 @@
       border-bottom: 2px solid var(--text);
       margin-bottom: 1.25rem;
     }
-    .cv-avatar {
-      width: 80px;
-      height: 80px;
+    .cv-avatar-wrap {
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .cv-avatar {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       object-position: center top;
-      flex-shrink: 0;
-      aspect-ratio: 1 / 1;
+      display: block;
     }
     .cv-header-info h1 {
       font-family: 'DM Serif Display', Georgia, serif;
@@ -369,16 +374,25 @@
         padding-bottom: 0.75rem;
         margin-bottom: 0.75rem;
       }
-      .cv-avatar { width: 56px; height: 56px; }
+      .cv-avatar-wrap { width: 70px; height: 70px; }
       .cv-header-info h1 { font-size: 1.3rem; }
       .cv-section { margin-bottom: 0.75rem; }
       .cv-section-header { margin-bottom: 0.4rem; }
       .cv-entry {
         padding: 0.3rem 0 0.3rem 1rem;
         break-inside: avoid;
+        page-break-inside: avoid;
       }
       .cv-entry + .cv-entry { margin-top: 0.15rem; }
       .cv-entry:hover { border-left-color: var(--border); }
+      .cv-section-header {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+      .cv-section {
+        break-inside: auto;
+        page-break-inside: auto;
+      }
       .cv-summary { font-size: 0.82rem; line-height: 1.5; }
       .cv-entry-title { font-size: 0.85rem; }
       .cv-entry-highlights li { font-size: 0.78rem; line-height: 1.45; }
@@ -413,7 +427,7 @@
 
     <!-- Header -->
     <header class="cv-header">
-      <img src="assets/img/profile.png" alt="Lovis Samina" class="cv-avatar">
+      <div class="cv-avatar-wrap"><img src="assets/img/profile.png" alt="Lovis Samina" class="cv-avatar"></div>
       <div class="cv-header-info">
         <h1>Lovis Samina</h1>
         <div class="cv-headline" data-lang="en">Project Coordination &middot; Campaigns &amp; Programme Management</div>
@@ -685,7 +699,7 @@
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true, width: 820 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+        pagebreak: { mode: ['css', 'legacy'] }
       };
       html2pdf().set(opt).from(el).save();
     }
