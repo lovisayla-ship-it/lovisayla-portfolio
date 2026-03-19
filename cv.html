@@ -393,6 +393,9 @@
       /* Sections: comfortable line spacing */
       .cv-section { margin-bottom: 0.9rem; }
       .cv-section-header { margin-bottom: 0.5rem; }
+      /* Page 2 sections get more space */
+      .cv-section.page2 { margin-bottom: 1.4rem; }
+      .cv-section.page2 .cv-section-header { margin-bottom: 0.65rem; }
       .cv-section-label { font-size: 0.65rem; }
       .cv-summary { font-size: 0.82rem; line-height: 1.6; }
 
@@ -425,9 +428,13 @@
         padding: 0;
       }
 
-      /* Page 2: skills & languages */
-      .cv-skill-pill { font-size: 0.72rem; padding: 0.2rem 0.5rem; }
-      .cv-lang-item, .cv-lang-same-level { font-size: 0.75rem; padding: 0.2rem 0.6rem; }
+      /* Page 2: more breathing room for skills, volunteer, languages */
+      .cv-skill-pills { gap: 0.4rem; }
+      .cv-skill-pill { font-size: 0.75rem; padding: 0.3rem 0.6rem; }
+      .cv-skills-grid { gap: 1.5rem; }
+      .cv-skills-category h3 { margin-bottom: 0.6rem; }
+      .cv-languages { gap: 0.45rem; }
+      .cv-lang-item, .cv-lang-same-level { font-size: 0.78rem; padding: 0.3rem 0.7rem; }
       a { color: var(--text) !important; }
     }
   </style>
@@ -593,7 +600,7 @@
 
     <!-- Ausbildung — Seite 2 -->
     <div class="page-break"></div>
-    <section class="cv-section">
+    <section class="cv-section page2">
       <div class="cv-section-header">
         <span class="cv-section-label" data-lang="en">Education</span>
         <span class="cv-section-label" data-lang="de">Ausbildung</span>
@@ -615,7 +622,7 @@
     </section>
 
     <!-- Ehrenamtliches Engagement -->
-    <section class="cv-section">
+    <section class="cv-section page2">
       <div class="cv-section-header">
         <span class="cv-section-label" data-lang="en">Volunteer Work</span>
         <span class="cv-section-label" data-lang="de">Ehrenamtliches Engagement</span>
@@ -632,7 +639,7 @@
     </section>
 
     <!-- Kernkompetenzen -->
-    <section class="cv-section">
+    <section class="cv-section page2">
       <div class="cv-section-header">
         <span class="cv-section-label" data-lang="en">Core Competencies</span>
         <span class="cv-section-label" data-lang="de">Kernkompetenzen</span>
@@ -659,7 +666,7 @@
     </section>
 
     <!-- Qualifikationen & Sprachen -->
-    <section class="cv-section">
+    <section class="cv-section page2">
       <div class="cv-section-header">
         <span class="cv-section-label" data-lang="en">Qualifications &amp; Languages</span>
         <span class="cv-section-label" data-lang="de">Qualifikationen &amp; Sprachen</span>
