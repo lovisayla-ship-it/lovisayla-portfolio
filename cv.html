@@ -106,7 +106,7 @@
     .cv-container {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 2.5rem 2rem 4rem;
+      padding: 1.5rem 2rem 3rem;
     }
 
     /* Header */
@@ -114,9 +114,9 @@
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      padding-bottom: 1.75rem;
+      padding-bottom: 1rem;
       border-bottom: 2px solid var(--text);
-      margin-bottom: 2rem;
+      margin-bottom: 1.25rem;
     }
     .cv-avatar {
       width: 80px;
@@ -125,6 +125,7 @@
       object-fit: cover;
       object-position: center top;
       flex-shrink: 0;
+      aspect-ratio: 1 / 1;
     }
     .cv-header-info h1 {
       font-family: 'DM Serif Display', Georgia, serif;
@@ -141,24 +142,25 @@
     .cv-contact {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem 1.25rem;
-      margin-top: 0.4rem;
+      gap: 0.4rem 1rem;
+      margin-top: 0.35rem;
       font-size: 0.82rem;
       color: var(--text-secondary);
     }
     .cv-contact a { color: var(--text-secondary); }
     .cv-contact a:hover { color: var(--accent); }
     .cv-contact span { display: inline-flex; align-items: center; gap: 0.3rem; }
+    .cv-contact .icon { font-size: 0.9rem; }
 
     /* Section */
     .cv-section {
-      margin-bottom: 2rem;
+      margin-bottom: 1.25rem;
     }
     .cv-section-header {
       display: flex;
       align-items: center;
       gap: 0.75rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.6rem;
     }
     .cv-section-label {
       font-size: 0.7rem;
@@ -176,16 +178,16 @@
 
     /* Summary */
     .cv-summary {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--text-secondary);
-      line-height: 1.7;
+      line-height: 1.65;
       border-left: 3px solid var(--accent);
       padding-left: 1rem;
     }
 
     /* Entry (Experience / Education) */
     .cv-entry {
-      padding: 0.75rem 0;
+      padding: 0.5rem 0;
       border-left: 2px solid var(--border);
       padding-left: 1.25rem;
       margin-left: 0.25rem;
@@ -193,12 +195,12 @@
       transition: border-color 0.2s;
     }
     .cv-entry:hover { border-left-color: var(--accent); }
-    .cv-entry + .cv-entry { margin-top: 0.5rem; }
+    .cv-entry + .cv-entry { margin-top: 0.25rem; }
     .cv-entry::before {
       content: '';
       position: absolute;
       left: -5px;
-      top: 1rem;
+      top: 0.75rem;
       width: 8px;
       height: 8px;
       background: var(--accent);
@@ -209,10 +211,10 @@
       justify-content: space-between;
       align-items: baseline;
       flex-wrap: wrap;
-      gap: 0.25rem 1rem;
+      gap: 0.15rem 1rem;
     }
     .cv-entry-title {
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 700;
     }
     .cv-entry-period {
@@ -222,30 +224,30 @@
       white-space: nowrap;
     }
     .cv-entry-company {
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: var(--accent);
       font-weight: 600;
     }
     .cv-entry-location {
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       color: var(--text-light);
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.25rem;
     }
     .cv-entry-highlights {
       list-style: none;
       padding: 0;
-      margin-top: 0.35rem;
+      margin-top: 0.2rem;
     }
     .cv-entry-highlights li {
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       color: var(--text-secondary);
-      line-height: 1.6;
+      line-height: 1.55;
       padding-left: 1rem;
       position: relative;
-      margin-bottom: 0.15rem;
+      margin-bottom: 0.1rem;
     }
     .cv-entry-highlights li::before {
-      content: '–';
+      content: '\2013';
       position: absolute;
       left: 0;
       color: var(--accent);
@@ -256,7 +258,7 @@
     .cv-skills-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
     .cv-skills-category h3 {
       font-size: 0.72rem;
@@ -264,20 +266,20 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--text-light);
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.5rem;
     }
     .cv-skill-pills {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.35rem;
+      gap: 0.3rem;
     }
     .cv-skill-pill {
       background: white;
       border: 1px solid var(--border);
       color: var(--text);
-      padding: 0.3rem 0.7rem;
+      padding: 0.25rem 0.65rem;
       border-radius: 50px;
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       font-weight: 500;
       transition: all 0.2s;
     }
@@ -292,20 +294,32 @@
     .cv-languages {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 0.4rem;
     }
     .cv-lang-item {
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.3rem;
       background: white;
       border: 1px solid var(--border);
       border-radius: 50px;
-      padding: 0.35rem 0.85rem;
-      font-size: 0.82rem;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.8rem;
     }
     .cv-lang-item .name { font-weight: 600; }
-    .cv-lang-item .level { color: var(--text-light); font-size: 0.75rem; }
+    .cv-lang-item .level { color: var(--text-light); font-size: 0.73rem; }
+    .cv-lang-same-level {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.8rem;
+    }
+    .cv-lang-same-level .name { font-weight: 600; }
+    .cv-lang-same-level .level { color: var(--text-light); font-size: 0.73rem; }
 
     /* Footer */
     .cv-footer {
@@ -339,11 +353,11 @@
       }
       @page {
         size: A4 portrait;
-        margin: 1.4cm 1.6cm;
+        margin: 1.2cm 1.4cm;
       }
       body {
-        font-size: 10pt;
-        line-height: 1.45;
+        font-size: 9.5pt;
+        line-height: 1.4;
         background: white !important;
       }
       .cv-topbar, .print-btn, .lang-switch, .cv-footer { display: none !important; }
@@ -352,24 +366,24 @@
         padding: 0;
       }
       .cv-header {
-        padding-bottom: 1rem;
-        margin-bottom: 1.25rem;
+        padding-bottom: 0.75rem;
+        margin-bottom: 0.75rem;
       }
-      .cv-avatar { width: 60px; height: 60px; }
-      .cv-header-info h1 { font-size: 1.4rem; }
-      .cv-section { margin-bottom: 1.25rem; }
-      .cv-section-header { margin-bottom: 0.6rem; }
+      .cv-avatar { width: 56px; height: 56px; }
+      .cv-header-info h1 { font-size: 1.3rem; }
+      .cv-section { margin-bottom: 0.75rem; }
+      .cv-section-header { margin-bottom: 0.4rem; }
       .cv-entry {
-        padding: 0.4rem 0 0.4rem 1rem;
+        padding: 0.3rem 0 0.3rem 1rem;
         break-inside: avoid;
       }
-      .cv-entry + .cv-entry { margin-top: 0.25rem; }
+      .cv-entry + .cv-entry { margin-top: 0.15rem; }
       .cv-entry:hover { border-left-color: var(--border); }
-      .cv-summary { font-size: 0.85rem; line-height: 1.55; }
-      .cv-entry-title { font-size: 0.88rem; }
-      .cv-entry-highlights li { font-size: 0.8rem; line-height: 1.5; }
-      .cv-skill-pill { font-size: 0.72rem; padding: 0.2rem 0.5rem; }
-      .cv-lang-item { font-size: 0.75rem; padding: 0.2rem 0.6rem; }
+      .cv-summary { font-size: 0.82rem; line-height: 1.5; }
+      .cv-entry-title { font-size: 0.85rem; }
+      .cv-entry-highlights li { font-size: 0.78rem; line-height: 1.45; }
+      .cv-skill-pill { font-size: 0.7rem; padding: 0.15rem 0.45rem; }
+      .cv-lang-item, .cv-lang-same-level { font-size: 0.73rem; padding: 0.15rem 0.5rem; }
       a { color: var(--text) !important; }
     }
   </style>
@@ -405,10 +419,10 @@
         <div class="cv-headline" data-lang="en">Project Coordination &middot; Campaigns &amp; Programme Management</div>
         <div class="cv-headline" data-lang="de">Projektkoordination &middot; Kampagnen- &amp; Programmmanagement</div>
         <div class="cv-contact">
-          <span><a href="mailto:saminalasj@gmail.com">saminalasj@gmail.com</a></span>
-          <span><a href="tel:004915905270753">+49 159 0527 0753</a></span>
-          <span data-lang="en">Friedelstra&szlig;e 4, 12047 Berlin, Germany</span>
-          <span data-lang="de">Friedelstra&szlig;e 4, 12047 Berlin</span>
+          <span><span class="icon">@</span> <a href="mailto:saminalasj@gmail.com">saminalasj@gmail.com</a></span>
+          <span><span class="icon">&#9742;</span> <a href="tel:004915905270753">+49 159 0527 0753</a></span>
+          <span data-lang="en"><span class="icon">&#9993;</span> Friedelstra&szlig;e 4, 12047 Berlin, Germany</span>
+          <span data-lang="de"><span class="icon">&#9993;</span> Friedelstra&szlig;e 4, 12047 Berlin</span>
         </div>
       </div>
     </header>
@@ -444,14 +458,14 @@
         <div class="cv-entry-location" data-lang="en">Berlin, Germany</div>
         <div class="cv-entry-location" data-lang="de">Berlin, Deutschland</div>
         <ul class="cv-entry-highlights">
-          <li data-lang="en">End-to-end project responsibility: planning, execution, and follow-up</li>
-          <li data-lang="en">Coordination of project contributors (up to 45 people) and external partners</li>
           <li data-lang="en">Qualitative field and desk research in operational and sensitive contexts</li>
-          <li data-lang="en">Structured documentation, briefings, and evidence-based reporting</li>
-          <li data-lang="de">End-to-End-Verantwortung: Planung, Umsetzung und Nachbereitung</li>
-          <li data-lang="de">Koordination von Projektbeteiligten (bis zu 45 Personen) und externen Partnern</li>
-          <li data-lang="de">Qualitative Feld- und Desk-Recherche in operativen und sensiblen Kontexten</li>
-          <li data-lang="de">Strukturierte Dokumentation, Briefings und evidenzbasierte Berichterstattung</li>
+          <li data-lang="en">Conceptualization and delivery of political and socially relevant projects in high-visibility, time-critical environments</li>
+          <li data-lang="en">End-to-end project responsibility: planning, execution, and follow-up</li>
+          <li data-lang="en">Meeting preparation and follow-up including documentation and minutes</li>
+          <li data-lang="de">Durchf&uuml;hrung qualitativer Feld- und Desk-Recherchen</li>
+          <li data-lang="de">Konzeption und Umsetzung von politischen und gesellschaftlich relevanten Projekten, in &ouml;ffentlich sichtbaren und zeitkritischen Kontexten</li>
+          <li data-lang="de">End-to-End-Verantwortung (Planung, Umsetzung und Nachbereitung)</li>
+          <li data-lang="de">Vorbereitung und Nachbereitung von Meetings inklusive Protokollierung</li>
         </ul>
       </div>
 
@@ -466,14 +480,14 @@
         <div class="cv-entry-location" data-lang="en">Hamburg, Germany &middot; Full-time</div>
         <div class="cv-entry-location" data-lang="de">Hamburg, Deutschland &middot; Vollzeit</div>
         <ul class="cv-entry-highlights">
-          <li data-lang="en">Planning and execution of campaigns and projects across five European countries</li>
-          <li data-lang="en">Coordination of international project teams with research, legal, and communications</li>
-          <li data-lang="en">Operational responsibility in high-visibility, time-critical environments</li>
-          <li data-lang="en">Meeting preparation, documentation, and structured evaluation of outcomes</li>
-          <li data-lang="de">Planung und Umsetzung von Kampagnen und Projekten in f&uuml;nf europ&auml;ischen L&auml;ndern</li>
-          <li data-lang="de">Koordination internationaler Projektteams mit Recherche-, Rechts- und Kommunikationsteams</li>
-          <li data-lang="de">Operative Verantwortung in &ouml;ffentlichkeitswirksamen, zeitkritischen Kontexten</li>
-          <li data-lang="de">Meetingvorbereitung, Dokumentation und strukturierte Auswertung von Ergebnissen</li>
+          <li data-lang="en">Planning and execution of campaigns and projects</li>
+          <li data-lang="en">Coordination of international project teams across five European countries</li>
+          <li data-lang="en">Collaboration with research, communications, and legal teams</li>
+          <li data-lang="en">Coordination of internal interfaces and external partners</li>
+          <li data-lang="de">Planung und Umsetzung von Kampagnen und Projekten</li>
+          <li data-lang="de">Koordination internationaler Projektteams in f&uuml;nf europ&auml;ischen L&auml;ndern</li>
+          <li data-lang="de">Zusammenarbeit mit Recherche-, Kommunikations- und Rechtsteams</li>
+          <li data-lang="de">Koordination interner Schnittstellen und externer Partner</li>
         </ul>
       </div>
 
@@ -566,19 +580,19 @@
         <span class="cv-skill-pill" data-lang="en">Project Coordination (end-to-end)</span>
         <span class="cv-skill-pill" data-lang="en">Campaign Planning &amp; Execution</span>
         <span class="cv-skill-pill" data-lang="en">International Team Coordination</span>
-        <span class="cv-skill-pill" data-lang="en">Stakeholder Management</span>
-        <span class="cv-skill-pill" data-lang="en">Qualitative Research</span>
-        <span class="cv-skill-pill" data-lang="en">Documentation &amp; Reporting</span>
+        <span class="cv-skill-pill" data-lang="en">Stakeholder &amp; Interface Management</span>
+        <span class="cv-skill-pill" data-lang="en">Qualitative Field &amp; Desk Research</span>
+        <span class="cv-skill-pill" data-lang="en">Documentation &amp; Evaluation</span>
         <span class="cv-skill-pill" data-lang="en">Event &amp; Action Logistics</span>
         <span class="cv-skill-pill" data-lang="en">Sensitive Operational Contexts</span>
-        <span class="cv-skill-pill" data-lang="de">Projektkoordination (ganzheitlich)</span>
+        <span class="cv-skill-pill" data-lang="de">Projektmanagement &amp; Operations (End-to-End)</span>
         <span class="cv-skill-pill" data-lang="de">Kampagnenplanung &amp; -umsetzung</span>
         <span class="cv-skill-pill" data-lang="de">Internationale Teamkoordination</span>
-        <span class="cv-skill-pill" data-lang="de">Stakeholder-Management</span>
-        <span class="cv-skill-pill" data-lang="de">Qualitative Forschung</span>
-        <span class="cv-skill-pill" data-lang="de">Dokumentation &amp; Berichterstattung</span>
+        <span class="cv-skill-pill" data-lang="de">Stakeholder- &amp; Schnittstellenmanagement</span>
+        <span class="cv-skill-pill" data-lang="de">Qualitative Feld- und Desk-Recherche</span>
+        <span class="cv-skill-pill" data-lang="de">Dokumentation und Auswertung</span>
         <span class="cv-skill-pill" data-lang="de">Event- &amp; Aktionslogistik</span>
-        <span class="cv-skill-pill" data-lang="de">Sensible operative Kontexte</span>
+        <span class="cv-skill-pill" data-lang="de">Arbeit in sensiblen Einsatzkontexten</span>
       </div>
     </section>
 
@@ -595,14 +609,14 @@
           <h3 data-lang="de">Zusatzqualifikationen</h3>
           <div class="cv-skill-pills">
             <span class="cv-skill-pill green" data-lang="en">Boat License (Inland &amp; Sea)</span>
-            <span class="cv-skill-pill green" data-lang="en">Car License</span>
+            <span class="cv-skill-pill green" data-lang="en">Car &amp; Motorcycle License (B, A2)</span>
             <span class="cv-skill-pill green" data-lang="en">Drone License A1/A3</span>
             <span class="cv-skill-pill green" data-lang="en">First Aid</span>
             <span class="cv-skill-pill green" data-lang="en">Emergency &amp; Crisis Management</span>
             <span class="cv-skill-pill green" data-lang="en">MS Office</span>
             <span class="cv-skill-pill green" data-lang="en">Research Trainings (Online &amp; Field)</span>
             <span class="cv-skill-pill green" data-lang="de">Sportbootf&uuml;hrerschein Binnen &amp; See</span>
-            <span class="cv-skill-pill green" data-lang="de">F&uuml;hrerschein Kl. B</span>
+            <span class="cv-skill-pill green" data-lang="de">F&uuml;hrerschein Kl. B &amp; A2</span>
             <span class="cv-skill-pill green" data-lang="de">Drohnenf&uuml;hrerschein A1/A3</span>
             <span class="cv-skill-pill green" data-lang="de">Erste Hilfe</span>
             <span class="cv-skill-pill green" data-lang="de">Notfall- &amp; Krisenmanagement</span>
@@ -626,15 +640,9 @@
               <span class="level" data-lang="en">(Fluent)</span>
               <span class="level" data-lang="de">(Flie&szlig;end)</span>
             </div>
-            <div class="cv-lang-item">
-              <span class="name" data-lang="en">Italian</span>
-              <span class="name" data-lang="de">Italienisch</span>
-              <span class="level" data-lang="en">(Good)</span>
-              <span class="level" data-lang="de">(Gut)</span>
-            </div>
-            <div class="cv-lang-item">
-              <span class="name" data-lang="en">Spanish</span>
-              <span class="name" data-lang="de">Spanisch</span>
+            <div class="cv-lang-same-level">
+              <span class="name" data-lang="en">Italian &amp; Spanish</span>
+              <span class="name" data-lang="de">Italienisch &amp; Spanisch</span>
               <span class="level" data-lang="en">(Good)</span>
               <span class="level" data-lang="de">(Gut)</span>
             </div>
@@ -672,10 +680,10 @@
     function downloadPDF() {
       var el = document.querySelector('.cv-container');
       var opt = {
-        margin: [12, 14, 12, 14],
+        margin: [10, 12, 10, 12],
         filename: 'Lovis_Samina_CV.pdf',
         image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
+        html2canvas: { scale: 2, useCORS: true, width: 820 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
         pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
       };
