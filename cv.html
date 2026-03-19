@@ -387,7 +387,7 @@
         <button class="lang-btn active" onclick="setLang('en')">EN</button>
         <button class="lang-btn" onclick="setLang('de')">DE</button>
       </div>
-      <button class="print-btn" onclick="window.print()">
+      <button class="print-btn" onclick="downloadPDF()">
         <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
         <span data-lang="en">Save as PDF</span>
         <span data-lang="de">Als PDF speichern</span>
@@ -657,6 +657,7 @@
     <span data-lang="de">&copy; 2026 Lovis Samina &middot; lovis-samina.com/cv.html</span>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
   <script>
     function setLang(lang) {
       document.documentElement.lang = lang;
@@ -667,6 +668,26 @@
     }
     const savedLang = localStorage.getItem('lang');
     if (savedLang) setLang(savedLang);
+
+    function downloadPDF() {
+      var el = document.querySelector('.cv-container');
+      var opt = {
+        margin: [12, 14, 12, 14],
+        filename: 'Lovis_Samina_CV.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+      };
+      html2pdf().set(opt).from(el).save();
+    }
+
+    // Auto-download if opened with ?download=pdf
+    if (new URLSearchParams(window.location.search).get('download') === 'pdf') {
+      window.addEventListener('load', function() {
+        setTimeout(downloadPDF, 500);
+      });
+    }
   </script>
 
 </body>
