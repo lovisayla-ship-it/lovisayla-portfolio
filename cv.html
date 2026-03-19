@@ -317,9 +317,9 @@
     }
 
     /* Language toggle */
-    [data-lang="de"] { display: none; }
-    html[lang="de"] [data-lang="de"] { display: revert; }
-    html[lang="de"] [data-lang="en"] { display: none; }
+    [data-lang="de"] { display: none !important; }
+    html[lang="de"] [data-lang="de"] { display: revert !important; }
+    html[lang="de"] [data-lang="en"] { display: none !important; }
 
     /* Responsive */
     @media (max-width: 640px) {
@@ -407,8 +407,8 @@
         <div class="cv-contact">
           <span><a href="mailto:saminalasj@gmail.com">saminalasj@gmail.com</a></span>
           <span><a href="tel:004915905270753">+49 159 0527 0753</a></span>
-          <span data-lang="en">Berlin, Germany</span>
-          <span data-lang="de">Berlin, Deutschland</span>
+          <span data-lang="en">Friedelstra&szlig;e 4, 12047 Berlin, Germany</span>
+          <span data-lang="de">Friedelstra&szlig;e 4, 12047 Berlin</span>
         </div>
       </div>
     </header>
